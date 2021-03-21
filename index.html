@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>nahora! - Você nunca mais irá esquecer de tomar seus medicamentos!</title>
+  <link rel="stylesheet" href="./style.css">
+<script>
+function confirmInput() {
+  alert("Enviado com sucesso! :D");
+}
+</script>
+</head>
+<body>
+<!-- partial:index.partial.html -->
+<div class="contact-us">
+<center><img src="logonahora.png" alt="NaHora!" width="200" ></center>
+<span style="display:block; height: 25px;"></span>
+  <form onsubmit="confirmInput()" action="send.php" method="post">
+    <input name="nome" placeholder="Primeiro nome" required="true" type="text" /><input name="celular" placeholder="Celular com DDD (apenas números)" required="true" type="tel" /><button type="submit" name="myButton" value="foo">Enviar amostra!</button>
+  </form>
+</div>
+<!-- partial -->
+  
+</body>
+</html>
